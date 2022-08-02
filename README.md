@@ -6,4 +6,4 @@ HTML5, SASS
 JavaScript
 
 ### `Live Demo`
-[preview]()
+[preview](https://efatsamir.github.io/Natours/)
