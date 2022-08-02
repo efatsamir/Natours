@@ -5635,17 +5635,17 @@ order: base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%;
 }
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
     font-size: 65.52%;
   }
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   html {
     font-size: 50%;
   }
 }
-@media (min-width: 112.5em) {
+@media only screen and (min-width: 112.5em) {
   html {
     font-size: 75%;
   }
@@ -5655,10 +5655,15 @@ body {
   box-sizing: border-box;
   padding: 3rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   body {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
 }
 
 body {
@@ -5684,7 +5689,7 @@ body {
   animation: moveInLeft 1s ease-out;
   -webkit-animation: moveInLeft 1s ease-out;
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .heading-primary--main {
     font-size: 5rem;
     letter-spacing: 1rem;
@@ -5697,7 +5702,7 @@ body {
   animation: moveInRight 1s ease-out;
   -webkit-animation: moveInRight 1s ease-out;
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .heading-primary--sub {
     letter-spacing: 0.5rem;
   }
@@ -5719,12 +5724,12 @@ body {
   -o-prop: all 0.2s;
   transition: all 0.2s;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .heading-secondary {
     font-size: 3rem;
   }
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .heading-secondary {
     font-size: 2.5rem;
   }
@@ -5764,7 +5769,7 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .u-margin-bottom-big {
     margin-bottom: 5rem !important;
   }
@@ -5773,7 +5778,7 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .u-margin-bottom-medium {
     margin-bottom: 3rem !important;
   }
@@ -5925,7 +5930,7 @@ body {
   border-radius: 2px;
   transition: all 0.2s;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .composition__photo {
     float: left;
     position: relative;
@@ -5937,7 +5942,7 @@ body {
   left: 0;
   top: -2rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .composition__photo--p1 {
     top: 0;
     transform: scale(1.2);
@@ -5948,7 +5953,7 @@ body {
   /**/
   top: 2rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .composition__photo--p2 {
     top: -1rem;
     right: 0;
@@ -5961,7 +5966,7 @@ body {
   left: 20%;
   top: 10rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .composition__photo--p3 {
     top: 1rem;
     left: 0;
@@ -5997,12 +6002,12 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
 }
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   .feature-box {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .feature-box {
     width: 100%;
     max-width: 50rem;
@@ -6019,7 +6024,7 @@ body {
   background-clip: text;
   color: transparent;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .feature-box__icon {
     margin-bottom: 0;
   }
@@ -6041,12 +6046,12 @@ body {
   margin: 0 auto;
   /*-------------------------------------*/
 }
-@media (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   .card {
     margin-bottom: 3rem;
   }
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .card {
     width: 100%;
     max-width: 40rem;
@@ -6092,13 +6097,13 @@ body {
   position: relative;
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../img/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../img/nat-7.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -6162,17 +6167,27 @@ body {
   font-size: 6rem;
   font-weight: 100;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em), only screen and (hover: none) {
   .card {
     height: auto;
-    width: 80%;
-    margin: 0 auto;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+  .card__side--back {
+    transform: rotateY(0);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
   }
   .card:hover .card__side--front {
     transform: rotateY(0);
   }
-  .card:hover .card__side--back {
-    transform: rotateY(0);
+  .card__details {
+    padding: 1rem 3rem;
   }
   .card__cta {
     position: relative;
@@ -6180,12 +6195,13 @@ body {
     left: 0;
     transform: translate(0);
     width: 100%;
+    padding: 7rem 4rem 4rem 4rem;
   }
   .card__price-box {
-    margin-bottom: 8rem;
+    margin-bottom: 3rem;
   }
   .card__price-value {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 
@@ -6199,6 +6215,18 @@ body {
   padding-left: 9rem;
   font-size: 1.6rem;
   transform: skewX(-12deg);
+}
+@media only screen and (max-width: 56.52em) {
+  .story {
+    width: 65%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story {
+    transform: skewX(0);
+  }
 }
 .story__shape {
   width: 15rem;
@@ -6218,6 +6246,11 @@ body {
     border-radius: none;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .story__shape {
+    transform: translateX(-3rem) skewX(0);
+  }
+}
 .story__img {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
@@ -6226,6 +6259,11 @@ body {
 }
 .story__text {
   transform: skewX(12deg);
+}
+@media only screen and (max-width: 37.5em) {
+  .story__text {
+    transform: skewX(0);
+  }
 }
 .story__caption {
   color: #fff;
@@ -6265,6 +6303,11 @@ body {
   display: block;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 56.52em) {
+  .form__input {
+    width: 100%;
+  }
+}
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -6292,6 +6335,12 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block;
+}
+@media only screen and (max-width: 56.52em) {
+  .form__radio-group {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 .form__radio-input {
   display: none;
@@ -6430,13 +6479,13 @@ body {
   text-align: center;
   cursor: pointer;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .navigation__button {
     top: 4rem;
     right: 4rem;
   }
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__button {
     top: 3rem;
     right: 3rem;
@@ -6453,13 +6502,13 @@ body {
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .navigation__background {
     top: 4.5rem;
     right: 4.5rem;
   }
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .navigation__background {
     top: 3.5rem;
     right: 3.5rem;
@@ -6571,12 +6620,12 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   }
 }
-@media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-width: 125em) {
+@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
     background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(./../img/hero.jpg);
   }
 }
-@media (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   .header {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -6610,7 +6659,7 @@ body {
   color: #f7f7f7;
   text-align: center;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .footer {
     padding: 8rem 0;
   }
@@ -6619,7 +6668,7 @@ body {
   text-align: center;
   margin-bottom: 8rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .footer__logo-box {
     margin-bottom: 6rem;
   }
@@ -6665,7 +6714,7 @@ body {
   padding: 25rem 0;
   margin-top: -20vh;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .about {
     padding: 20rem 0;
   }
@@ -6694,7 +6743,7 @@ body {
   -o-prop: skewY(7deg);
   transform: skewY(7deg);
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .features {
     padding: 10rem 0;
   }
@@ -6705,7 +6754,7 @@ body {
   padding: 20rem 0 15rem 0;
   margin-top: -10rem;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .tours {
     padding: 20rem 0 10rem 0;
   }
@@ -6715,7 +6764,7 @@ body {
   position: relative;
   padding: 15rem 0;
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .stories {
     padding: 10rem 0;
   }
@@ -6725,7 +6774,7 @@ body {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
 }
-@media (max-width: 56.52em) {
+@media only screen and (max-width: 56.52em) {
   .booking {
     padding: 10rem 0;
   }
@@ -6738,11 +6787,30 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   width: 85%;
   margin: 0 auto;
-  height: 50rem;
+}
+@media only screen and (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url(./../../img/nat-10.jpg);
+  }
+}
+@media only screen and (max-width: 75em) {
+  .book {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(./../../img/nat-10.jpg);
+  }
 }
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+@media only screen and (max-width: 75em) {
+  .book__form {
+    width: 65%;
+  }
+}
+@media only screen and (max-width: 56.52em) {
+  .book__form {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=compile.css.map */
